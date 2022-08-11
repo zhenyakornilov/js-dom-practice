@@ -62,6 +62,10 @@ body {
   background-color: #F5F5DC;
 }
 
+.content-body .content-text {
+  line-height: 1.6;
+}
+
 .footer {
   grid-area: footer-bottom;
   background-color: bisque;
@@ -75,4 +79,3 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
-
