@@ -1,0 +1,14 @@
+.footer {
+    grid-area: footer-bottom;
+    background-color: bisque;
+    text-align: center;
+    background-color: #2B4865;
+    height: 4vh;
+    display: table;
+
+    .footer-link {
+        color: #8FE3CF;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

@@ -8,8 +8,8 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: 
     'header-top header-top' 
     'sidebar-nav content-main' 
@@ -22,4 +22,4 @@ body {
 @import 'sidebar', 'content';
 
 
-@import 'footer'
+@import 'footer';
