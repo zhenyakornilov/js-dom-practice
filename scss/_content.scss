@@ -1,0 +1,10 @@
+.content {
+  grid-area: content-main;
+  background-color: #f5f5dc;
+}
+
+.content-body {
+  .content-text {
+    line-height: 1.6;
+  }
+}

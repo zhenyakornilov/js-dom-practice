@@ -8,18 +8,16 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: 1fr 4fr;
-  grid-template-areas: 
-    'header-top header-top' 
-    'sidebar-nav content-main' 
-    'footer-bottom footer-bottom'
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header-top header-top"
+    "sidebar-nav content-main"
+    "footer-bottom footer-bottom";
 }
 
-@import 'header';
+@import "header";
 
+@import "sidebar", "content";
 
-@import 'sidebar', 'content';
-
-
-@import 'footer'
+@import "footer";

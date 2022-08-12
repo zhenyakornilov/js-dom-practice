@@ -1,0 +1,58 @@
+.header.dark {
+  background-color: black;
+}
+
+.header {
+  grid-area: header-top;
+  background-color: #2b4865;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 50px;
+  position: relative;
+
+  .title {
+    color: #8fe3cf;
+  }
+
+  .check-switch {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+  }
+
+  .check-switch:checked + .theme-switcher .circle {
+    transform: translatex(24px);
+  }
+
+  .theme-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #223a51;
+    right: 30px;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    padding: 5px;
+    right: 15px;
+  }
+
+  .circle {
+    position: absolute;
+    background-color: #8fe3cf;
+    height: 22px;
+    width: 22px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+
+  .fa-moon,
+  .fa-sun {
+    color: #f5f5dc;
+  }
+}
