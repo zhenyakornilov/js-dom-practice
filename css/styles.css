@@ -131,8 +131,11 @@ body {
   background-color: #f5f5dc;
 }
 
-.content-body .content-text {
-  line-height: 1.6;
+.content-body {
+  margin: 40px 40px 0 40px;
+}
+.content-body .museum-desc {
+  line-height: 1.6rem;
 }
 
 .footer.dark {

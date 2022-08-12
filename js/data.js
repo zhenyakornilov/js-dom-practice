@@ -3,7 +3,7 @@ const data = [
     name: 'National Museum "Chernobyl"',
     btnName: "Chernobyl",
     description:
-      "The National Museum “Chernobyl”is a multifunctional institution combining scientific, cultural and educational " +
+      "The National Museum “Chernobyl” is a multifunctional institution combining scientific, cultural and educational " +
       "activity with a modern museum and archive, documenting,preservingand conveying the history of the Chernobyl " +
       "nuclear disaster as the most severe radioecological disaster of the XX century. The after-effects of it have " +
       "no analogy and differ from other natural or manmade catastrophes. These are still the issues of contemporaneity " +
