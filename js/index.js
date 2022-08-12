@@ -58,7 +58,6 @@ function renderArticle(museumObj) {
     `<h2 class="museum-title">${museumObj.name}</h2>` +
     `<img class="museum-image" src="${museumObj.imageSrc}" width="45%" alt="photo of museum">` +
     `<p class="museum-desc">${museumObj.description}</p>` +
-    `<p class="museum-link">Visit <a href="${museumObj.museumUrl}" target="_blank">museum page</a> for more information...</p>` +
-    `<iframe class='museum-maps' src="${museumObj.mapsLink}"></iframe>`
+    `<p class="museum-link">Visit <a href="${museumObj.museumUrl}" target="_blank">museum page</a> for more information...</p>`
   );
 }

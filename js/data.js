@@ -12,75 +12,70 @@ const data = [
       "kilometers ofthe epicenter of the disaster.",
     imageSrc: "images/chernobyl.jpg",
     museumUrl: "http://chornobylmuseum.kiev.ua/uk/",
-    mapsLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.6442285020544!2d30.515261115732024!3d50.46634937947754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce6aad7ae271%3A0x27ce7e3429075a!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INC80YPQt9C10LkgwqvQp9C-0YDQvdC-0LHQuNC70YzCuw!5e0!3m2!1suk!2sua!4v1660254936091!5m2!1suk!2sua",
   },
   {
     name: 'The first state "Science Museum" of the Small Academy of Sciences of Ukraine',
     btnName: "Science",
     description:
-      "Музей науки МАН – це перший державний музей, де заборонено НЕ торкатися експонатів. " +
-      "Відвідувач опиниться в просторі, де в зрозумілій і доступній формі продемонстровані " +
-      "найважливіші наукові здобутки людства, їхні закони та взаємодія. " +
-      "У нас можна покататися на велосипеді з квадратними колесами, вирушити в космічну подорож, " +
-      "побачити двометрову голограму та багатокілограмовий кристал, дізнатися, як побудований організм людини " +
-      "та потримати в руках модель головного мозку й органів людини. Окрім цього, " +
-      "на відвідувачів чекає безліч відкриттів і вражень: від керування роборукою до можливості побачити власний голос і " +
-      "«пам’ять металів», потрапити всередину гігантської мушлі та в дзеркальний тунель із оптичною ілюзією. Дізнатися, як " +
-      "виникають кольори та створити веселку. Найбільший інтерактивний експонат Музею науки – це скляна стеля, яка змінює колір.",
+      "The Museum of Science of the National Academy of Sciences is the first state museum where it is forbidden " +
+      "NOT to touch the exhibits. The visitor will find himself in a space where the most important scientific " +
+      "achievements of mankind, their laws and interaction are demonstrated in an understandable and accessible " +
+      "form. Here you can ride a bicycle with square wheels, go on a space trip, see a two-meter hologram and a " +
+      "multi-kilogram crystal, learn how the human body is built, and hold a model of the human brain and organs " +
+      "in your hands. In addition, many discoveries and impressions await visitors: from controlling a robot to being " +
+      'able to see your own voice and "metal memory", get inside a giant shell and into a mirror tunnel with an optical ' +
+      "illusion. Learn how colors are formed and create a rainbow. The Science Museum's largest interactive exhibit " +
+      'is a glass ceiling that changes color."',
     imageSrc: "images/science.jpg",
     museumUrl: "https://sciencemuseum.com.ua/",
-    mapsLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.3782359094025!2d30.47954841572875!3d50.37814727946543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9c6b121e453%3A0x5f08e572447de913!2z0IbQvdGC0LXRgNCw0LrRgtC40LLQvdC40Lkg0L_RgNC-0YHRgtGW0YAgwqvQnNGD0LfQtdC5INCd0LDRg9C60LjCuw!5e0!3m2!1suk!2sua!4v1660255271295!5m2!1suk!2sua",
   },
   {
-    name: "Музей історії України у Другій світовій війні",
+    name: "Museum of the History of Ukraine in the Second World War",
     btnName: "Ukraine in WWII",
     description:
-      "Зі зміною назви (а раніше музей звався музеєм Великої Вітчизняної війни) до основної  експозиції " +
-      "(яка створювалася ще за радянських часів, але виглядає досить сучасною) додалася й експозиція про " +
-      "участь українських військових у воєнних конфліктах у світі. Також тут відбуваються виставки, присвячені " +
-      "визвольній боротьбі УПА та війні на Сході України. На території музею просто неба виставлено чимало зразків " +
-      "військової техніки. Найвідоміший об’єкт музею – це монумент «Батьківщина-Мати». Там облаштовано два " +
-      "оглядові майданчики: «Краєвид» на висоті 36,6 м, під ногами гігантської жінки, та «Екстрим» – на висоті 91 м " +
-      "(на руці, якою вона тримає щита). На цей майданчик пускають лише відвідувачів віком від 18 років. Підйом передбачає " +
-      "супровід інструктора та може здійснюватися виключно за умови гарної погоди (t °С від +5 до +30), без опадів та сильних поривів вітру.",
+      "With the change of name (before the museum was called the Museum of the Great Patriotic War), an exposition " +
+      "on the participation of the Ukrainian military in military conflicts in the world was added to the main " +
+      "exposition (which was created in Soviet times, but looks quite modern). There are also exhibitions dedicated " +
+      "to the liberation struggle of the UPA and the war in Eastern Ukraine. Many samples of military equipment are " +
+      'exhibited on the territory of the open-air museum. The most famous object of the museum is the "Motherland" ' +
+      'monument. There are two viewing platforms: "Landscape" at a height of 36.6 m, under the feet of a giant woman, ' +
+      'and "Extreme" - at a height of 91 m (on the hand with which she holds a shield). Only visitors over the age ' +
+      "of 18 are allowed on this site. The ascent is accompanied by an instructor and can be carried out only in good " +
+      "weather conditions (t °С from +5 to +30), without precipitation and strong gusts of wind.",
     imageSrc: "images/ukraine_ww2.jpg",
     museumUrl: "https://www.warmuseum.kiev.ua/",
-    mapsLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.708237761841!2d30.562515415480885!3d50.42790739687048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76fb53f3d7%3A0xee2de90672f6d60e!2z0JzQtdC80L7RgNGW0LDQu9GM0L3QuNC5INC60L7QvNC_0LvQtdC60YEg0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INC80YPQt9C10Lkg0ZbRgdGC0L7RgNGW0Zcg0JLQtdC70LjQutC-0Zcg0JLRltGC0YfQuNC30L3Rj9C90L7RlyDQstGW0LnQvdC4!5e0!3m2!1suk!2sua!4v1660255418186!5m2!1suk!2sua",
   },
   {
     name: "The National Museum of Natural History of the National Academy of Sciences of Ukraine",
     btnName: "Natural",
     description:
-      "Національний науково-природничий музей НАН України (ННПМ) — один із найбільших науково-природничих " +
-      "музеїв світу і найбільший природничий музей України.",
-    descMore:
-      "Музей розташовано в центрі Києва у старовинному будинку з оригінальною архітектурою у стилі неокласицизму." +
-      "Музейний комплекс ННПМ створено за класичними принципами музеєзнавства. Музей має 24 зали загальною 8 тисяч кв. метрів. " +
-      "В ньому зібрано понад 30 тис. експонатів, що розповідають про виникнення, будову та еволюцію Землі, її рослинний і " +
-      "тваринний світ, їхнє минуле та сучасне, про історію матеріальної культури племен і народів, що заселяли територію України. " +
-      "Центральне місце в музеї посідає комплекс діорам — ландшафтні експозиції та біогрупи, кількість яких сягає 24.",
+      "The National Museum of Natural History at the National Academy of Sciences of Ukraine is one of the biggest " +
+      "scientific research museums of the type in the world. It was established in 1966 as a unified complex comprising " +
+      "five museums: the Geological, Paleonto- logical, Zoological and Botanical. The National Museum of Natural History " +
+      "is located in the heart of Kyiv, in an antique mansion with expressive and remarkable architecture. " +
+      "The Museum complex itself was built in accordance with the classical approach to museum study. More than 30 " +
+      "thousand speciments which are exhibited in 24 halls occupying 8 thousand square meters illustrate the origin, " +
+      "structure and evolution of the Earth, its plant and animal life, its past and present, the history of the material " +
+      "cul­ture of the tribes and peoples that inhabited the territory of Ukraine. The central place in the museums is " +
+      "occupied by a complex of dioramas: 30 landscape expositions and biogroups. The National Museum of Natural History " +
+      "is headed by Academician Yevhen Shniukov, the National Academy of Sciences of Ukraine.",
     imageSrc: "images/natural_history.jpg",
     museumUrl: "https://museumkiev.org/",
-    mapsLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.762764385013!2d30.51211531548157!3d50.44551939560164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce57efc5c7f3%3A0xf3c4bc714a289cf8!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INC90LDRg9C60L7QstC-LdC_0YDQuNGA0L7QtNC90LjRh9C40Lkg0LzRg9C30LXQuSDQndCQ0J0g0KPQutGA0LDRl9C90Lg!5e0!3m2!1suk!2sua!4v1660255506851!5m2!1suk!2sua",
   },
   {
-    name: "Національний музей історії України",
+    name: "National Museum of the History of Ukraine",
     btnName: "Ukraine's history",
     description:
-      "Національний музей історії України – один із провідних музеїв України, заснований у 1904р. Фонди музею налічують понад 800 тис. " +
-      "унікальних пам’яток історії та культури. Особливо цінними вважаються археологічні та нумізматичні колекції. Не менш цікаві " +
-      "колекції холодної та вогнепальної зброї, етнографії, унікальні видання книг, вироби зі скла та порцеляни. Близько 10 тис. " +
-      "експонатів налічують колекції живопису, графіки та скульптури. Також є колекція документів XV—XXI ст., козацьких атрибутів, " +
-      "універсалів, грамот, листів гетьманів та козацьких старшин. Музей історичних коштовностей України є філією, де зібрані унікальні " +
-      "колекції дорогоцінних металів та каміння. Музей є справжньою скарбницею національних історико-культурних реліквій народу.",
+      "The National Museum of the History of Ukraine is one of the leading museums of Ukraine, founded in 1904. " +
+      "The museum's funds include more than 800,000 unique monuments of history and culture. Archaeological and " +
+      "numismatic collections are considered especially valuable. Collections of cold and firearms, ethnographies, " +
+      "unique editions of books, glassware and porcelain are no less interesting. The collection of paintings, graphics, " +
+      "and sculptures includes about 10,000 exhibits. There is also a collection of documents of the XV-XXI centuries, " +
+      "Cossack attributes, universals, letters, letters of hetmans and Cossack elders. The Museum of Historical Jewels " +
+      "of Ukraine is a branch that houses unique collections of precious metals and stones. The museum is a real treasury " +
+      "of national historical and cultural relics of the people.",
     imageSrc: "images/ukraine_history.jpg",
     museumUrl: "https://nmiu.org/",
-    mapsLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.0751537865735!2d30.513994815481933!3d50.45832519467885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef817b05e8f%3A0xcd79d6b215ccfdcf!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INC80YPQt9C10Lkg0ZbRgdGC0L7RgNGW0Zcg0KPQutGA0LDRl9C90Lg!5e0!3m2!1suk!2sua!4v1660255621713!5m2!1suk!2sua",
   },
 ];
 

@@ -37,7 +37,7 @@ body {
 }
 
 .header.dark {
-  background-color: #150c25;
+  background-color: #041c32;
 }
 
 .header {
@@ -90,7 +90,7 @@ body {
 }
 
 .sidebar.dark {
-  background-color: #150c25;
+  background-color: #041c32;
 }
 
 .sidebar {
@@ -127,7 +127,7 @@ body {
 }
 
 .content.dark {
-  background-color: #32393d;
+  background-color: #04293a;
 }
 
 .content {
@@ -142,8 +142,12 @@ body {
   line-height: 1.6rem;
 }
 
+.museum-desc.dark {
+  color: #ecb365;
+}
+
 .footer.dark {
-  background-color: #150c25;
+  background-color: #041c32;
 }
 
 .footer {

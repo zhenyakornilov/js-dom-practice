@@ -1,5 +1,5 @@
 .content.dark {
-  background-color: #32393d;
+  background-color: #04293a;
 }
 
 .content {
@@ -8,8 +8,12 @@
 }
 
 .content-body {
-    margin: 40px 40px 0 40px;
+  margin: 40px 40px 0 40px;
   .museum-desc {
     line-height: 1.6rem;
   }
+}
+
+.museum-desc.dark {
+  color: #ecb365;
 }
