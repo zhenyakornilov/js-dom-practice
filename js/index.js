@@ -16,3 +16,18 @@ function changeTheme() {
 }
 
 changeTheme();
+
+function renderButtons(arr) {
+  const listMenu = document.querySelector(".nav-item");
+  arr.forEach((obj) => {
+    console.log(obj);
+    listMenu.insertAdjacentHTML(
+      "beforeend",
+      `<li class="nav-item">` +
+      `  <span class="btn-text">${obj["btnName"]}</span>` +
+      `</li>`
+    );
+  });
+}
+
+renderButtons(museumsData);
