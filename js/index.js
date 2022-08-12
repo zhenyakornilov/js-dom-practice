@@ -33,7 +33,7 @@ function toggleSelectedButton(museums) {
     return obj;
   }
 
-  renderContent(getContextObj());
+  renderArticle(getContextObj());
 
   for (let button of buttons) {
     button.addEventListener("click", function () {
@@ -43,11 +43,7 @@ function toggleSelectedButton(museums) {
         this.classList.add("open");
         selectedButton = this;
 
-        const selectedBtnText = document.querySelector(".open span");
-        let obj = museums.filter(
-          ({ btnName }) => btnName === selectedBtnText.textContent
-        )[0];
-        renderContent(getContextObj());
+        renderArticle(getContextObj());
       }
     });
   }
@@ -55,12 +51,12 @@ function toggleSelectedButton(museums) {
 
 toggleSelectedButton(museumsData);
 
-function renderContent(museumObj) {
+function renderArticle(museumObj) {
   let article = document.querySelector(".content-body");
   article.insertAdjacentHTML(
     "afterbegin",
     `<h2 class="museum-title">${museumObj.name}</h2>` +
-    `<img class="museum-image" src="${museumObj.imageSrc}" width="20%" alt="photo of museum">` +
+    `<img class="museum-image" src="${museumObj.imageSrc}" width="45%" alt="photo of museum">` +
     `<p class="museum-desc">${museumObj.description}</p>` +
     `<p class="museum-link">Visit <a href="${museumObj.museumUrl}" target="_blank">museum page</a> for more information...</p>` +
     `<iframe class='museum-maps' src="${museumObj.mapsLink}"></iframe>`

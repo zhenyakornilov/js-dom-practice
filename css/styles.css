@@ -37,7 +37,7 @@ body {
 }
 
 .header.dark {
-  background-color: black;
+  background-color: #150c25;
 }
 
 .header {
@@ -90,7 +90,7 @@ body {
 }
 
 .sidebar.dark {
-  background-color: black;
+  background-color: #150c25;
 }
 
 .sidebar {
@@ -126,6 +126,10 @@ body {
   color: #f5f5dc;
 }
 
+.content.dark {
+  background-color: #32393d;
+}
+
 .content {
   grid-area: content-main;
   background-color: #f5f5dc;
@@ -139,7 +143,7 @@ body {
 }
 
 .footer.dark {
-  background-color: black;
+  background-color: #150c25;
 }
 
 .footer {
