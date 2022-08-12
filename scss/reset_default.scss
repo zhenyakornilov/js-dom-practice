@@ -1,17 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
-*::after{box-sizing:border-box;}
-
-ul, li {
-    list-style: none;
+*::after {
+  box-sizing: border-box;
 }
 
-a, a:link, a:visited, a:hover, a:active {
-    color: inherit;
-    text-decoration: none;
-  }
+ul,
+li {
+  list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
