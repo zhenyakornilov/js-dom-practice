@@ -1,6 +1,5 @@
 import museumsData from "./data.js";
 import switchTheme from "./utils.js";
-console.log(museumsData[1]["description"]);
 
 switchTheme();
 
