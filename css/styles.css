@@ -37,7 +37,7 @@ body {
 }
 
 .header.dark {
-  background-color: black;
+  background-color: #041c32;
 }
 
 .header {
@@ -90,7 +90,7 @@ body {
 }
 
 .sidebar.dark {
-  background-color: black;
+  background-color: #041c32;
 }
 
 .sidebar {
@@ -126,17 +126,28 @@ body {
   color: #f5f5dc;
 }
 
+.content.dark {
+  background-color: #04293a;
+}
+
 .content {
   grid-area: content-main;
   background-color: #f5f5dc;
 }
 
-.content-body .content-text {
-  line-height: 1.6;
+.content-body {
+  margin: 40px 40px 0 40px;
+}
+.content-body .museum-desc {
+  line-height: 1.6rem;
+}
+
+.museum-desc.dark {
+  color: #ecb365;
 }
 
 .footer.dark {
-  background-color: black;
+  background-color: #041c32;
 }
 
 .footer {

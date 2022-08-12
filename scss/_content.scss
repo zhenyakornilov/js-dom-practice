@@ -1,10 +1,19 @@
+.content.dark {
+  background-color: #04293a;
+}
+
 .content {
   grid-area: content-main;
   background-color: #f5f5dc;
 }
 
 .content-body {
-  .content-text {
-    line-height: 1.6;
+  margin: 40px 40px 0 40px;
+  .museum-desc {
+    line-height: 1.6rem;
   }
+}
+
+.museum-desc.dark {
+  color: #ecb365;
 }
