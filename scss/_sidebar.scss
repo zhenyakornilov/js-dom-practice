@@ -13,5 +13,35 @@
 
   .menu-items {
     margin-top: 50px;
+
+    .nav-item {
+        border-bottom: 1px solid #f5f5dc;
+        width: 200px;
+        margin: 10;
+    }
   }
 }
+
+.nav-item {
+    height: 20px;
+    color: #8fe3cf;
+    margin-bottom: 50px;
+    font-size: 18px;
+
+    & :hover {
+        cursor: pointer;
+        color: #f5f5dc;
+    }
+}
+
+.nav-item.open {
+    color: #f5f5dc;
+}
+
+
+
+
+
+
+
+

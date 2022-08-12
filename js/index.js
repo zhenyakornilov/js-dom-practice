@@ -18,16 +18,34 @@ function changeTheme() {
 changeTheme();
 
 function renderButtons(arr) {
-  const listMenu = document.querySelector(".nav-item");
+  const listMenu = document.querySelector(".menu-items");
   arr.forEach((obj) => {
-    console.log(obj);
     listMenu.insertAdjacentHTML(
       "beforeend",
       `<li class="nav-item">` +
-      `  <span class="btn-text">${obj["btnName"]}</span>` +
-      `</li>`
+        `  <span class="btn-text">${obj["btnName"]}</span>` +
+        `</li>`
     );
   });
 }
 
 renderButtons(museumsData);
+
+function toggleSelectedButton() {
+  let selectedButton = document.getElementsByClassName("nav-item")[1];
+  selectedButton.classList.add("open");
+
+  const buttons = document.getElementsByClassName("nav-item");
+
+  for (let button of buttons) {
+    button.addEventListener("click", function () {
+      if (!this.classList.contains("open")) {
+        selectedButton.classList.remove("open");
+        this.classList.add("open");
+        selectedButton = this;
+      }
+    });
+  }
+}
+
+toggleSelectedButton();

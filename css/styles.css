@@ -31,7 +31,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header-top header-top" "sidebar-nav content-main" "footer-bottom footer-bottom";
 }
@@ -104,6 +104,26 @@ body {
 }
 .sidebar .menu-items {
   margin-top: 50px;
+}
+.sidebar .menu-items .nav-item {
+  border-bottom: 1px solid #f5f5dc;
+  width: 200px;
+  margin: 10;
+}
+
+.nav-item {
+  height: 20px;
+  color: #8fe3cf;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+.nav-item :hover {
+  cursor: pointer;
+  color: #f5f5dc;
+}
+
+.nav-item.open {
+  color: #f5f5dc;
 }
 
 .content {
