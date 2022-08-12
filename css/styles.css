@@ -25,6 +25,11 @@ a:active {
 
 body {
   font-family: Montserrat, sans-serif;
+  background-color: #2b4865;
+}
+
+body.dark {
+  background-color: #041c32;
 }
 
 .wrapper {
@@ -49,6 +54,7 @@ body {
   text-align: center;
   height: 50px;
   position: relative;
+  overflow-y: hidden;
 }
 .header .title {
   color: #8fe3cf;
@@ -100,7 +106,7 @@ body {
   align-items: center;
   grid-area: sidebar-nav;
   background-color: #2b4865;
-  overflow: auto;
+  overflow-y: hidden;
 }
 .sidebar .menu-items {
   margin-top: 50px;
@@ -133,6 +139,10 @@ body {
 .content {
   grid-area: content-main;
   background-color: #f5f5dc;
+  position: relative;
+  overflow-y: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .content-body {
@@ -140,10 +150,19 @@ body {
 }
 .content-body .museum-desc {
   line-height: 1.6rem;
+  overflow-wrap: break-word;
+  margin-top: 20px;
+}
+.content-body .museum-image {
+  display: block;
+  margin-top: 20px;
+  float: left;
+  text-align: justify;
+  padding: 0 20px 20px 0;
 }
 
 .museum-desc.dark {
-  color: #ecb365;
+  color: #f5f5dc;
 }
 
 .footer.dark {
@@ -156,10 +175,10 @@ body {
   text-align: center;
   background-color: #2b4865;
   height: 4vh;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer .footer-link {
   color: #8fe3cf;
-  display: table-cell;
-  vertical-align: middle;
 }

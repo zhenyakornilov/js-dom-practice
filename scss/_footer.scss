@@ -8,11 +8,11 @@
   text-align: center;
   background-color: #2b4865;
   height: 4vh;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .footer-link {
     color: #8fe3cf;
-    display: table-cell;
-    vertical-align: middle;
   }
 }

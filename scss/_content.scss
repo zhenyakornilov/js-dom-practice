@@ -5,15 +5,29 @@
 .content {
   grid-area: content-main;
   background-color: #f5f5dc;
+  position: relative;
+  overflow-y: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .content-body {
   margin: 40px 40px 0 40px;
   .museum-desc {
     line-height: 1.6rem;
+    overflow-wrap: break-word;
+    margin-top: 20px;
+  }
+
+  .museum-image {
+    display: block;
+    margin-top: 20px;
+    float: left;
+    text-align: justify;
+    padding: 0 20px 20px 0;
   }
 }
 
 .museum-desc.dark {
-  color: #ecb365;
+  color: #f5f5dc;
 }
