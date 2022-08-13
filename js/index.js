@@ -9,7 +9,7 @@ function renderButtons(arr) {
     listMenu.insertAdjacentHTML(
       "beforeend",
       `<li class="nav-item">` +
-      `  <span class="btn-text">${btnName}</span>` +
+      `  <button class="btn-text">${btnName}</button>` +
       `</li>`
     );
   });
@@ -24,7 +24,7 @@ function toggleSelectedButton(museums) {
   const buttons = document.getElementsByClassName("nav-item");
 
   function getContextObj() {
-    const selectedBtnText = document.querySelector(".open span");
+    const selectedBtnText = document.querySelector(".open .btn-text");
     let obj = museums.filter(
       ({ btnName }) => btnName === selectedBtnText.textContent
     )[0];
@@ -51,12 +51,21 @@ function toggleSelectedButton(museums) {
 toggleSelectedButton(museumsData);
 
 function renderArticle(museumObj) {
-  let article = document.querySelector(".content-body");
-  article.insertAdjacentHTML(
-    "afterbegin",
-    `<h2 class="museum-title">${museumObj.name}</h2>` +
-    `<img class="museum-image" src="${museumObj.imageSrc}" width="38%" alt="photo of museum">` +
-    `<p class="museum-desc">${museumObj.description}</p>` +
-    `<p class="museum-link">Visit <a href="${museumObj.museumUrl}" target="_blank">museum page</a> for more information...</p>`
-  );
+  let contentTag = document.querySelector(".content-body");
+
+  const content = `
+  <h2 class="museum-title">${museumObj.name}</h2>
+  <div class="desc-wrapper">
+    <img class="museum-image" src="${museumObj.imageSrc}" width="38%" alt="photo of museum">
+    <p class="museum-desc">${museumObj.description}</p>
+  </div>
+  <div class="additional-wrapper">
+    <p class="museum-link">
+      <span>Visit </span>
+      <a class='inner-link' href="${museumObj.museumUrl}" target="_blank">museum page</a>
+      <span> for more information...</span>
+    </p>
+  `;
+
+  contentTag.insertAdjacentHTML("afterbegin", content);
 }

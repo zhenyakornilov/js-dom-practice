@@ -3,10 +3,10 @@
 }
 
 .content {
+  display: flex;
   grid-area: content-main;
   background-color: #f5f5dc;
   position: relative;
-  overflow-y: auto;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -24,18 +24,43 @@
 }
 
 .content-body {
+  position: relative;
   margin: 40px 40px 0 40px;
-  .museum-desc {
-    line-height: 1.6rem;
-    overflow-wrap: break-word;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "desc desc"
+    "more more";
+
+  .museum-title {
+    display: grid;
+    grid-area: title;
   }
 
-  .museum-image {
-    display: block;
+  .desc-wrapper {
+    grid-area: desc;
+    line-height: 1.6rem;
+    overflow-wrap: normal;
     margin-top: 20px;
-    float: left;
-    text-align: justify;
-    padding: 0 20px 20px 0;
+
+    .museum-image {
+      float: left;
+    }
   }
+
+  .additional-wrapper {
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-area: more;
+    margin-bottom: 20px;
+  }
+}
+
+.museum-link a {
+  color: darkgoldenrod;
+}
+
+.inner-link:hover {
+  color: #ff69b4;
 }

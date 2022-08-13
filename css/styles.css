@@ -18,9 +18,21 @@ a,
 a:link,
 a:visited,
 a:hover,
-a:active {
+a:active,
+a:focus {
   color: inherit;
   text-decoration: none;
+  outline: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 body {
@@ -127,6 +139,9 @@ body.dark {
   cursor: pointer;
   color: #f5f5dc;
 }
+.nav-item :focus {
+  color: #ff69b4;
+}
 
 .nav-item.open {
   color: #f5f5dc;
@@ -137,10 +152,10 @@ body.dark {
 }
 
 .content {
+  display: flex;
   grid-area: content-main;
   background-color: #f5f5dc;
   position: relative;
-  overflow-y: auto;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -155,19 +170,38 @@ body.dark {
 }
 
 .content-body {
+  position: relative;
   margin: 40px 40px 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "desc desc" "more more";
 }
-.content-body .museum-desc {
+.content-body .museum-title {
+  display: grid;
+  grid-area: title;
+}
+.content-body .desc-wrapper {
+  grid-area: desc;
   line-height: 1.6rem;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
   margin-top: 20px;
 }
-.content-body .museum-image {
-  display: block;
-  margin-top: 20px;
+.content-body .desc-wrapper .museum-image {
   float: left;
-  text-align: justify;
-  padding: 0 20px 20px 0;
+}
+.content-body .additional-wrapper {
+  justify-self: flex-end;
+  align-self: flex-end;
+  grid-area: more;
+  margin-bottom: 20px;
+}
+
+.museum-link a {
+  color: darkgoldenrod;
+}
+
+.inner-link:hover {
+  color: #ff69b4;
 }
 
 .footer.dark {
@@ -176,7 +210,6 @@ body.dark {
 
 .footer {
   grid-area: footer-bottom;
-  background-color: bisque;
   text-align: center;
   background-color: #2b4865;
   height: 4vh;
@@ -186,4 +219,11 @@ body.dark {
 }
 .footer .footer-link {
   color: #8fe3cf;
+}
+.footer .footer-link :hover {
+  color: #f5f5dc;
+}
+
+.footer-link:focus {
+  color: #ff69b4;
 }

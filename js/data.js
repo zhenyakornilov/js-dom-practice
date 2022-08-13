@@ -9,7 +9,7 @@ const data = [
       "no analogy and differ from other natural or manmade catastrophes. These are still the issues of contemporaneity " +
       "and, unfortunately, of the generation to come." +
       "The Museum opened to the public on April 26, 1992,in Kiev, the capital of Ukraine, from a hundred " +
-      "kilometers ofthe epicenter of the disaster.",
+      "kilometers of the epicenter of the disaster.",
     imageSrc: "images/chernobyl.jpg",
     museumUrl: "http://chornobylmuseum.kiev.ua/uk/",
   },
