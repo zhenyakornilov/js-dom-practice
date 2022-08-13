@@ -32,6 +32,10 @@
     cursor: pointer;
     color: #f5f5dc;
   }
+
+  & :focus {
+    color: #ff69b4;
+  }
 }
 
 .nav-item.open {

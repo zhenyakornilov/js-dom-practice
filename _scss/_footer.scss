@@ -4,7 +4,6 @@
 
 .footer {
   grid-area: footer-bottom;
-  background-color: bisque;
   text-align: center;
   background-color: #2b4865;
   height: 4vh;
@@ -14,5 +13,13 @@
 
   .footer-link {
     color: #8fe3cf;
+
+    & :hover {
+      color: #f5f5dc;
+    }
   }
+}
+
+.footer-link:focus {
+  color: #ff69b4;
 }
