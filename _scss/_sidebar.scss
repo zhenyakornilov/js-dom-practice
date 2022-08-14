@@ -2,6 +2,10 @@
   background-color: #041c32;
 }
 
+.sidebar.hidden {
+  visibility: hidden;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -10,6 +14,10 @@
   grid-area: sidebar-nav;
   background-color: #2b4865;
   overflow-y: hidden;
+}
+
+.sidebar.active {
+  visibility: none;
 }
 
 .menu-items {

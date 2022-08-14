@@ -110,12 +110,22 @@ body.dark {
   color: #f5f5dc;
 }
 
-.fake-item {
+.dropdown-wrap {
   display: inline;
+}
+
+.dropdown {
+  display: none;
+  margin-left: 20px;
+  color: #8fe3cf;
 }
 
 .sidebar.dark {
   background-color: #041c32;
+}
+
+.sidebar.hidden {
+  visibility: hidden;
 }
 
 .sidebar {
@@ -126,6 +136,10 @@ body.dark {
   grid-area: sidebar-nav;
   background-color: #2b4865;
   overflow-y: hidden;
+}
+
+.sidebar.active {
+  visibility: none;
 }
 
 .menu-items {
@@ -182,7 +196,6 @@ body.dark {
   position: relative;
   margin: 4rem 4rem 0 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 4fr 1fr;
   grid-template-areas: "title title" "desc desc" "more more";
 }
@@ -199,7 +212,7 @@ body.dark {
 }
 .content-body .desc-wrapper .museum-image {
   float: left;
-  margin: 0 1.5rem 0 0;
+  margin: 0 1.5rem 1.5rem 0;
   width: 450px;
 }
 .content-body .additional-wrapper {
@@ -226,7 +239,7 @@ body.dark {
   grid-area: footer-bottom;
   text-align: center;
   background-color: #2b4865;
-  height: 4vh;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,16 +288,46 @@ body.dark {
   .wrapper {
     grid-template-areas: "header-top header-top" "content-main content-main" "footer-bottom footer-bottom";
   }
+  .dropdown {
+    display: inline;
+  }
   .sidebar {
-    display: none;
-    position: fixed;
-    bottom: auto;
-    top: auto;
-    left: auto;
-    right: auto;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+  .sidebar.active {
+    width: 200px;
+    text-align: left;
+    visibility: visible;
+    z-index: 10;
+    top: 50px;
+    left: 10px;
+    border-radius: 10px;
+    border: 1px solid #223a51;
+    opacity: 1;
+    transition: opacity 0.2s linear;
   }
   .content {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 }
+@media screen and (max-width: 576px) {
+  .header .title {
+    font-size: 2.5rem;
+  }
+  .content-body {
+    grid-template-rows: 100px 1fr 100px;
+  }
+}
+@media screen and (max-width: 508px) {
+  .header .title {
+    font-size: 100%;
+  }
+  .content-body .desc-wrapper .museum-image {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
