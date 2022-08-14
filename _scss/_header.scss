@@ -58,6 +58,12 @@
   }
 }
 
-.fake-item {
+.dropdown-wrap {
   display: inline;
+}
+
+.dropdown {
+  display: none;
+  margin-left: 20px;
+  color: #8fe3cf;
 }

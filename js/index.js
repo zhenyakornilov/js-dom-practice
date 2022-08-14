@@ -69,3 +69,14 @@ function renderArticle(museumObj) {
   `;
   contentTag.insertAdjacentHTML("afterbegin", content);
 }
+
+function openMenu() {
+  const dropDownBtn = document.querySelector(".dropdown");
+
+  dropDownBtn.addEventListener("click", function () {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.classList.toggle("active");
+  });
+}
+
+openMenu();

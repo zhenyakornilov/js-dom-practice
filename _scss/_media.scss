@@ -43,17 +43,58 @@
       "content-main content-main"
       "footer-bottom footer-bottom";
   }
+
+  .dropdown {
+    display: inline;
+  }
+
   .sidebar {
-    display: none;
-    position: fixed;
-    bottom: auto;
-    top: auto;
-    left: auto;
-    right: auto;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .sidebar.active {
+    width: 200px;
+    text-align: left;
+    visibility: visible;
+    z-index: 10;
+    top: 50px;
+    left: 10px;
+    border-radius: 10px;
+    border: 1px solid #223a51;
+    opacity: 1;
+    transition: opacity 0.2s linear;
   }
 
   .content {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  .content-body {
+    grid-template-rows: 100px 1fr 100px;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .header {
+    .title {
+      font-size: 100%;
+    }
+  }
+  .content-body {
+    .desc-wrapper {
+      .museum-image {
+        width: 100%;
+      }
+    }
   }
 }
