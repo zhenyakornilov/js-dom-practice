@@ -1,6 +1,11 @@
 @import "reset_default";
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   font-family: Montserrat, sans-serif;
   background-color: #2b4865;
 }
@@ -21,8 +26,4 @@ body.dark {
     "footer-bottom footer-bottom";
 }
 
-@import "header";
-
-@import "sidebar", "content";
-
-@import "footer";
+@import "header", "sidebar", "content", "footer", "media";

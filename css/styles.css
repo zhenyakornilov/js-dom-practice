@@ -35,7 +35,12 @@ button {
   outline: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   font-family: Montserrat, sans-serif;
   background-color: #2b4865;
 }
@@ -107,6 +112,10 @@ body.dark {
   color: #f5f5dc;
 }
 
+.fake-item {
+  display: inline;
+}
+
 .sidebar.dark {
   background-color: #041c32;
 }
@@ -120,20 +129,22 @@ body.dark {
   background-color: #2b4865;
   overflow-y: hidden;
 }
-.sidebar .menu-items {
+
+.menu-items {
   margin-top: 50px;
 }
-.sidebar .menu-items .nav-item {
+
+.nav-item {
   border-bottom: 1px solid #f5f5dc;
-  width: 200px;
+  width: 20rem;
   margin: 10;
 }
 
 .nav-item {
-  height: 20px;
+  height: 2rem;
   color: #8fe3cf;
-  margin-bottom: 50px;
-  font-size: 18px;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
 }
 .nav-item :hover {
   cursor: pointer;
@@ -171,9 +182,10 @@ body.dark {
 
 .content-body {
   position: relative;
-  margin: 40px 40px 0 40px;
+  margin: 4rem 4rem 0 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
   grid-template-areas: "title title" "desc desc" "more more";
 }
 .content-body .museum-title {
@@ -182,18 +194,22 @@ body.dark {
 }
 .content-body .desc-wrapper {
   grid-area: desc;
-  line-height: 1.6rem;
-  overflow-wrap: normal;
+  line-height: 1.6;
+  font-size: 1.75rem;
+  overflow-wrap: break-word;
   margin-top: 20px;
 }
 .content-body .desc-wrapper .museum-image {
   float: left;
+  margin: 0 1.5rem 0 0;
+  width: 450px;
 }
 .content-body .additional-wrapper {
   justify-self: flex-end;
   align-self: flex-end;
   grid-area: more;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  margin-top: 8rem;
 }
 
 .museum-link a {
@@ -226,4 +242,51 @@ body.dark {
 
 .footer-link:focus {
   color: #ff69b4;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr;
+  }
+  .content-body {
+    grid-template-rows: 80px 1fr 0.5fr;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+  }
+  .content-body {
+    grid-template-rows: 60px 1fr 100px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .nav-item {
+    width: 16rem;
+  }
+  .content-body .desc-wrapper {
+    font-size: 1.9rem;
+  }
+  .content-body .desc-wrapper .museum-image {
+    display: block;
+    float: none;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    grid-template-areas: "header-top header-top" "content-main content-main" "footer-bottom footer-bottom";
+  }
+  .sidebar {
+    display: none;
+    position: fixed;
+    bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+  .content {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }

@@ -56,7 +56,7 @@ function renderArticle(museumObj) {
   const content = `
   <h2 class="museum-title">${museumObj.name}</h2>
   <div class="desc-wrapper">
-    <img class="museum-image" src="${museumObj.imageSrc}" width="38%" alt="photo of museum">
+    <img class="museum-image" src="${museumObj.imageSrc}" alt="photo of museum">
     <p class="museum-desc">${museumObj.description}</p>
   </div>
   <div class="additional-wrapper">
@@ -65,7 +65,7 @@ function renderArticle(museumObj) {
       <a class='inner-link' href="${museumObj.museumUrl}" target="_blank">museum page</a>
       <span> for more information...</span>
     </p>
+  </div>
   `;
-
   contentTag.insertAdjacentHTML("afterbegin", content);
 }

@@ -1,0 +1,59 @@
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .content-body {
+    grid-template-rows: 80px 1fr 0.5fr;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .content-body {
+    grid-template-rows: 60px 1fr 100px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .nav-item {
+    width: 16rem;
+  }
+
+  .content-body {
+    .desc-wrapper {
+      font-size: 1.9rem;
+
+      .museum-image {
+        display: block;
+        float: none;
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    grid-template-areas:
+      "header-top header-top"
+      "content-main content-main"
+      "footer-bottom footer-bottom";
+  }
+  .sidebar {
+    display: none;
+    position: fixed;
+    bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .content {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
