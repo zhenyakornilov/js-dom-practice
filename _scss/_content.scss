@@ -66,5 +66,10 @@
 }
 
 .inner-link:hover {
-  color: #ff69b4;
+  color: #ffc0cb;
+}
+
+.inner-link:focus {
+  color: #ffc0cb;
+  border-bottom: 1px solid #ffc0cb;
 }
