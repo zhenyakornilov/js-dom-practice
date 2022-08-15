@@ -24,6 +24,7 @@
   }
 
   .content-body {
+    gap: 10px;
     .desc-wrapper {
       font-size: 1.9rem;
 
@@ -59,12 +60,13 @@
     text-align: left;
     visibility: visible;
     z-index: 10;
-    top: 50px;
+    top: 55px;
     left: 10px;
     border-radius: 10px;
     border: 1px solid #223a51;
     opacity: 1;
     transition: opacity 0.2s linear;
+    box-shadow: 0 0 5px 1px #223a51;
   }
 
   .content {
@@ -96,5 +98,11 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 356px) {
+  #root {
+    font-size: 50%;
   }
 }
