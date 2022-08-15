@@ -42,6 +42,16 @@
     right: 1.5rem;
   }
 
+  .check-switch:focus-visible + .theme-switcher {
+    border: 2px solid #ffc0cb;
+
+    .circle {
+      top: 0.05rem;
+      left: 0.05rem;
+      background-color: #ffc0cb;
+    }
+  }
+
   .circle {
     position: absolute;
     background-color: #8fe3cf;
@@ -67,4 +77,11 @@
   display: none;
   margin-left: 2rem;
   color: #8fe3cf;
+  padding: 5px 5px 4px 5px;
+}
+
+.dropdown:focus-visible {
+  border: 1px solid #ffc0cb;
+  color: #ffc0cb;
+  border-radius: 5px;
 }

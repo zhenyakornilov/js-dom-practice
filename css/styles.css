@@ -100,6 +100,14 @@ button {
   padding: 0.5rem;
   right: 1.5rem;
 }
+.header .check-switch:focus-visible + .theme-switcher {
+  border: 2px solid #ffc0cb;
+}
+.header .check-switch:focus-visible + .theme-switcher .circle {
+  top: 0.05rem;
+  left: 0.05rem;
+  background-color: #ffc0cb;
+}
 .header .circle {
   position: absolute;
   background-color: #8fe3cf;
@@ -123,6 +131,13 @@ button {
   display: none;
   margin-left: 2rem;
   color: #8fe3cf;
+  padding: 5px 5px 4px 5px;
+}
+
+.dropdown:focus-visible {
+  border: 1px solid #ffc0cb;
+  color: #ffc0cb;
+  border-radius: 5px;
 }
 
 .sidebar.dark {
@@ -168,7 +183,7 @@ button {
   color: #f5f5dc;
 }
 .nav-item :focus {
-  color: #ff69b4;
+  color: #ffc0cb;
 }
 
 .nav-item.open {
@@ -233,7 +248,12 @@ button {
 }
 
 .inner-link:hover {
-  color: #ff69b4;
+  color: #ffc0cb;
+}
+
+.inner-link:focus {
+  color: #ffc0cb;
+  border-bottom: 1px solid #ffc0cb;
 }
 
 .footer.dark {
@@ -244,7 +264,7 @@ button {
   grid-area: footer-bottom;
   text-align: center;
   background-color: #2b4865;
-  height: 25px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +277,8 @@ button {
 }
 
 .footer-link:focus {
-  color: #ff69b4;
+  color: #ffc0cb;
+  border-bottom: 1px solid #ffc0cb;
 }
 
 @media screen and (max-width: 1400px) {
