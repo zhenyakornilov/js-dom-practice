@@ -388,20 +388,22 @@ button {
     font-size: 1.8rem;
   }
 
+  .content-body {
+    grid-template-rows: auto auto auto;
+    row-gap: 0;
+  }
+
   .content-body .desc-wrapper .museum-image {
     width: 100%;
   }
 }
-
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 356px) {
   #root {
     font-size: 50%;
   }
 
   .content-body {
     margin: 2rem 2rem 0 2rem;
-    row-gap: 0;
-    grid-template-rows: auto auto auto;
   }
 }
 
