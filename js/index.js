@@ -77,7 +77,7 @@ function openMenu(menu) {
   const dropDownBtn = document.querySelector(".dropdown");
 
   dropDownBtn.addEventListener("click", function () {
-    const sidebar = menu.closest('.sidebar');
+    const sidebar = menu.closest(".sidebar");
     sidebar.classList.toggle("active");
   });
 }
