@@ -1,10 +1,17 @@
 import museums from "./data.js";
 import switchTheme from "./utils.js";
 
-switchTheme();
+function main() {
+  switchTheme();
 
-const listMenu = document.querySelector(".menu-items");
-const contentBody = document.querySelector(".content-body");
+  const listMenu = document.querySelector(".menu-items");
+  const contentBody = document.querySelector(".content-body");
+  renderButtons(museums, listMenu);
+  toggleSelectedButton(museums, contentBody);
+  openMenu(listMenu);
+}
+
+document.addEventListener("DOMContentLoaded", main);
 
 function renderButtons(arr, menu) {
   let buttonsHTML = ``;
@@ -18,8 +25,6 @@ function renderButtons(arr, menu) {
 
   menu.innerHTML = buttonsHTML;
 }
-
-renderButtons(museums, listMenu);
 
 function toggleSelectedButton(museums, content) {
   let selectedButton = document.getElementsByClassName("nav-item")[1];
@@ -52,8 +57,6 @@ function toggleSelectedButton(museums, content) {
   }
 }
 
-toggleSelectedButton(museums, contentBody);
-
 function renderArticle(museumObj, content) {
   const contentHTML = `
   <h2 class="museum-title">${museumObj.name}</h2>
@@ -81,5 +84,3 @@ function openMenu(menu) {
     sidebar.classList.toggle("active");
   });
 }
-
-openMenu(listMenu);
