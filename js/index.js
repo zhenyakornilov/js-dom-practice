@@ -1,4 +1,4 @@
-import museumsData from "./data.js";
+import museums from "./data.js";
 import switchTheme from "./utils.js";
 
 switchTheme();
@@ -19,7 +19,7 @@ function renderButtons(arr, menu) {
   menu.innerHTML = buttonsHTML;
 }
 
-renderButtons(museumsData, listMenu);
+renderButtons(museums, listMenu);
 
 function toggleSelectedButton(museums, content) {
   let selectedButton = document.getElementsByClassName("nav-item")[1];
@@ -52,7 +52,7 @@ function toggleSelectedButton(museums, content) {
   }
 }
 
-toggleSelectedButton(museumsData, contentBody);
+toggleSelectedButton(museums, contentBody);
 
 function renderArticle(museumObj, content) {
   const contentHTML = `
