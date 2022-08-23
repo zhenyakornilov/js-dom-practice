@@ -106,7 +106,7 @@
 }
 
 @media screen and (max-width: 356px) {
-  #root {
+  :root {
     font-size: 50%;
   }
 
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 290px) {
-  #root {
+  :root {
     font-size: 43%;
   }
 
