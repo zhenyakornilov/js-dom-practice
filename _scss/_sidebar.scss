@@ -34,15 +34,15 @@
   color: #8fe3cf;
   margin-bottom: 5rem;
   font-size: 1.8rem;
+}
 
-  & :hover {
-    cursor: pointer;
-    color: #f5f5dc;
-  }
+.nav-item:hover {
+  cursor: pointer;
+  color: #f5f5dc;
+}
 
-  & :focus {
-    color: #ffc0cb;
-  }
+.nav-item:focus {
+  color: #ffc0cb;
 }
 
 .nav-item.open {
