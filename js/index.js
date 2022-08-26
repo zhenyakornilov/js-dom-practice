@@ -9,11 +9,12 @@ function main() {
   const listMenu = document.getElementById("menu");
   const contentBody = document.getElementById("content");
   renderButtons(museums, listMenu);
+  renderArticle(museums[0], contentBody);
+
   toggleSelectedButton(museums, contentBody);
+
   openMenu(listMenu);
 }
-
-document.addEventListener("DOMContentLoaded", main);
 
 function renderButtons(museumsObj, menu) {
   let buttonsHTML = museumsObj
@@ -29,7 +30,7 @@ function renderButtons(museumsObj, menu) {
   menu.innerHTML = buttonsHTML;
 }
 
-function toggleSelectedButton(museums, content) {
+function toggleSelectedButton(museums, content, menu) {
   let selectedButton = document.getElementsByClassName("nav-item")[0];
   selectedButton.classList.add("open");
 
@@ -43,8 +44,6 @@ function toggleSelectedButton(museums, content) {
 
     return obj;
   }
-
-  renderArticle(getContextObj(), content);
 
   for (let button of buttons) {
     button.addEventListener("click", function () {
@@ -87,3 +86,5 @@ function openMenu(menu) {
     sidebar.classList.toggle("active");
   });
 }
+
+document.addEventListener("DOMContentLoaded", main);
