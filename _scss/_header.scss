@@ -24,10 +24,6 @@
     right: 2rem;
   }
 
-  .check-switch:checked + .theme-switcher .circle {
-    transform: translatex(2.4rem);
-  }
-
   .theme-switcher {
     position: relative;
     display: flex;
@@ -69,8 +65,8 @@
   }
 }
 
-.dropdown-wrap {
-  display: inline;
+.check-switch:checked + .theme-switcher .circle {
+  transform: translateX(2.4rem);
 }
 
 .dropdown {

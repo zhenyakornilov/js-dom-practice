@@ -92,7 +92,7 @@
       font-size: 1.8rem;
     }
   }
-  
+
   .content-body {
     grid-template-rows: auto auto auto;
     row-gap: 0;
@@ -106,7 +106,7 @@
 }
 
 @media screen and (max-width: 356px) {
-  :root {
+  html {
     font-size: 50%;
   }
 
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 290px) {
-  :root {
+  html {
     font-size: 43%;
   }
 
