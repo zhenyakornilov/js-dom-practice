@@ -32,33 +32,33 @@
     "title title"
     "desc desc"
     "more more";
+}
 
-  .museum-title {
-    display: grid;
-    grid-area: title;
-  }
+.museum-title {
+  display: grid;
+  grid-area: title;
+}
 
-  .desc-wrapper {
-    grid-area: desc;
-    line-height: 1.6;
-    font-size: 1.75rem;
-    overflow-wrap: break-word;
-    margin-top: 20px;
+.desc-wrapper {
+  grid-area: desc;
+  line-height: 1.6;
+  font-size: 1.75rem;
+  overflow-wrap: break-word;
+  margin-top: 20px;
+}
 
-    .museum-image {
-      float: left;
-      margin: 0 1.5rem 1.5rem 0;
-      width: 450px;
-    }
-  }
+.museum-image {
+  float: left;
+  margin: 0 1.5rem 1.5rem 0;
+  width: 450px;
+}
 
-  .additional-wrapper {
-    justify-self: flex-end;
-    align-self: flex-end;
-    grid-area: more;
-    margin-bottom: 2rem;
-    margin-top: 8rem;
-  }
+.additional-wrapper {
+  justify-self: flex-end;
+  align-self: flex-end;
+  grid-area: more;
+  margin-bottom: 2rem;
+  margin-top: 8rem;
 }
 
 .museum-link a {
