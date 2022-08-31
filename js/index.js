@@ -47,11 +47,11 @@ function renderArticle({ name, description, imageSrc, url }, content) {
     <p class="museum-desc">${description}</p>
   </div>
   <div class="additional-wrapper">
-    <p class="museum-link">
-      <span>Visit </span>
+    <span class="museum-link">
+      Visit 
       <a class='inner-link' href="${url}" target="_blank">museum page</a>
-      <span> for more information...</span>
-    </p>
+      for more information...
+    </span>
   </div>
   `;
 
