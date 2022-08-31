@@ -58,6 +58,11 @@
   }
 }
 
+.theme-switcher:hover .sun-icon,
+.theme-switcher:hover .moon-icon {
+  color: #8fe3cf;
+}
+
 .circle {
   position: absolute;
   background-color: #8fe3cf;
