@@ -26,7 +26,7 @@ function showMuseumInfo({ target }) {
   if (target.closest(".btn-text")) {
     let currentSelectedBtn = target.closest(".nav-item");
     if (!currentSelectedBtn.classList.contains("active")) {
-      const [currentContentObject, ...rest] = museums.filter(
+      const [currentContentObject] = museums.filter(
         ({ btnName }) => btnName === target.textContent
       );
       renderArticle(currentContentObject, contentBody);
